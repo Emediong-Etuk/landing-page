@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex River | Professional Illustrator</title>
+    <meta name="description" content="Portfolio of Alex River, a professional illustrator specializing in editorial and character design.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        slate: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-slate-200 selection:text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="font-serif text-2xl font-semibold tracking-tight text-slate-900">Alex River</a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#portfolio" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Portfolio</a>
+                    <a href="#about" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">About</a>
+                    <a href="#contact" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Contact</a>
+                    <a href="#contact" class="px-5 py-2.5 bg-slate-900 text-white text-sm font-medium rounded-full hover:bg-slate-800 transition-all shadow-sm hover:shadow-md">Hire Me</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-slate-600 hover:text-slate-900 focus:outline-none p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-2 shadow-lg">
+                <a href="#portfolio" class="block px-3 py-3 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-md">Portfolio</a>
+                <a href="#about" class="block px-3 py-3 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-md">About</a>
+                <a href="#contact" class="block px-3 py-3 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-md">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-16 md:pt-40 md:pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto fade-in">
+            <p class="text-slate-500 font-medium tracking-wide uppercase text-sm mb-4">Editorial & Character Illustration</p>
+            <h1 class="font-serif text-5xl md:text-7xl font-medium text-slate-900 leading-tight mb-6">
+                Visual storytelling that <br/> <span class="text-slate-500 italic">breathes life</span> into ideas.
+            </h1>
+            <p class="text-lg text-slate-600 leading-relaxed mb-10 max-w-2xl mx-auto">
+                I help brands, publishers, and agencies communicate complex concepts through thoughtful, hand-crafted digital illustrations.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#portfolio" class="inline-flex items-center justify-center px-6 py-3 border border-slate-200 text-base font-medium rounded-full text-slate-900 bg-white hover:bg-slate-50 hover:border-slate-300 transition-all">
+                    View Work
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid -->
+    <section id="portfolio" class="py-16 md:py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-end mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl text-slate-900">Selected Works</h2>
+                <a href="#" class="hidden md:inline-flex items-center text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors group">
+                    View Archive
+                    <svg class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Masonry-style Grid -->
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
+                <!-- Item 1 -->
+                <div class="break-inside-avoid group fade-in">
+                    <div class="relative overflow-hidden rounded-lg bg-white shadow-sm hover:shadow-xl transition-all duration-300">
+                        <img src="https://picsum.photos/seed/art1/800/1000" alt="Editorial Illustration" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h3 class="text-white font-medium text-lg">The Midnight Library</h3>
+                                <p class="text-white/80 text-sm mt-1">Book Cover Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="break-inside-avoid group fade-in">
+                    <div class="relative overflow-hidden rounded-lg bg-white shadow-sm hover:shadow-xl transition-all duration-300">
+                        <img src="https://picsum.photos/seed/art2/800/600" alt="Character Design" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h3 class="text-white font-medium text-lg">Urban Explorers</h3>
+                                <p class="text-white/80 text-sm mt-1">Character Concept</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="break-inside-avoid group fade-in">
+                    <div class="relative overflow-hidden rounded-lg bg-white shadow-sm hover:shadow-xl transition-all duration-300">
+                        <img src="https://picsum.photos/seed/art3/800/1200" alt="Magazine Spread" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h3 class="text-white font-medium text-lg">Future of Work</h3>
+                                <p class="text-white/80 text-sm mt-1">Editorial Spread</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="break-inside-avoid group fade-in">
+                    <div class="relative overflow-hidden rounded-lg bg-white shadow-sm hover:shadow-xl transition-all duration-300">
+                        <img src="https://picsum.photos/seed/art4/800/800" alt="Packaging Design" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h3 class="text-white font-medium text-lg">Botanical Brew</h3>
+                                <p class="text-white/80 text-sm mt-1">Packaging Illustration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="break-inside-avoid group fade-in">
+                    <div class="relative overflow-hidden rounded-lg bg-white shadow-sm hover:shadow-xl transition-all duration-300">
+                        <img src="https://picsum.photos/seed/art5/800/1000" alt="Poster Design" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h3 class="text-white font-medium text-lg">Jazz Festival 2024</h3>
+                                <p class="text-white/80 text-sm mt-1">Event Poster</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="break-inside-avoid group fade-in">
+                    <div class="relative overflow-hidden rounded-lg bg-white shadow-sm hover:shadow-xl transition-all duration-300">
+                        <img src="https://picsum.photos/seed/art6/800/600" alt="Web Illustration" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h3 class="text-white font-medium text-lg">Digital Workspace</h3>
+                                <p class="text-white/80 text-sm mt-1">Landing Page Hero</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center md:hidden">
+                <a href="#" class="inline-flex items-center text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors group">
+                    View Archive
+                    <svg class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+                <div class="w-full md:w-1/2 fade-in">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-slate-100 rounded-2xl transform rotate-3 z-0"></div>
+                        <img src="https://picsum.photos/seed/artist/800/800" alt="Alex River Portrait" class="relative rounded-xl shadow-lg w-full h-auto z-10 grayscale hover:grayscale-0 transition-all duration-500">
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 fade-in">
+                    <h2 class="font-serif text-3xl md:text-4xl text-slate-900 mb-6">Behind the Canvas</h2>
+                    <div class="space-y-4 text-slate-600 text-lg leading-relaxed">
+                        <p>
+                            Hi, I'm Alex. I'm an illustrator based in the Pacific Northwest, drawing inspiration from nature, mid-century modern design, and everyday absurdities.
+                        </p>
+                        <p>
+                            With over 8 years of experience in the creative industry, I've had the pleasure of working with global brands and local startups alike. My work combines traditional ink techniques with modern digital tools to create textures that feel warm and authentic.
+                        </p>
+                        <p>
+                            When I'm not drawing, you can find me hiking the Cascades, brewing overly complicated coffee, or trying to stop my cat from walking across my tablet.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-8 grid grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="font-medium text-slate-900 mb-2">Services</h4>
+                            <ul class="text-slate-500 text-sm space-y-1">
+                                <li>Editorial Illustration</li>
+                                <li>Book Cover Design</li>
+                                <li>Brand Assets</li>
+                                <li>Packaging Design</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-slate-900 mb-2">Select Clients</h4>
+                            <ul class="text-slate-500 text-sm space-y-1">
+                                <li>New York Times</li>
+                                <li>Penguin Random House</li>
+                                <li>Spotify</li>
+                                <li>Airbnb</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center fade-in">
+            <p class="text-slate-400 font-medium tracking-wide uppercase text-sm mb-4">Get in Touch</p>
+            <h2 class="font-serif text-4xl md:text-5xl font-medium mb-6">Have a project in mind?</h2>
+            <p class="text-slate-300 text-lg mb-10 max-w-xl mx-auto">
+                I'm currently available for freelance projects and collaborations. Let's create something beautiful together.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="mailto:hello@alexriver.com" class="px-8 py-4 bg-white text-slate-900 font-medium rounded-full hover:bg-slate-100 transition-colors shadow-lg w-full sm:w-auto">
+                    hello@alexriver.com
+                </a>
+                <a href="#" class="px-8 py-4 border border-slate-700 text-white font-medium rounded-full hover:bg-slate-800 transition-colors w-full sm:w-auto">
+                    Download Resume
+                </a>
+            </div>
+            
+            <div class="mt-16 flex justify-center space-x-8 text-slate-400">
+                <a href="#" class="hover:text-white transition-colors">
+                    <span class="sr-only">Instagram</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+                <a href="#" class="hover:text-white transition-colors">
+                    <span class="sr-only">Twitter</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                </a>
+                <a href="#" class="hover:text-white transition-colors">
+                    <span class="sr-only">Dribbble</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.756 1.002-1.632 2.15-2.41 3.093-3.694-2.069-6.375-2.83-6.784-2.922zm5.72 4.172c.815-.963 1.7-2.14 2.479-3.176 2.061.96 5.542 2.158 9.518 1.285l.08.38c.057.273.08.55.08.83 0 4.746-3.818 8.55-8.523 8.55-2.61 0-4.948-1.163-6.507-2.973 1.15-2.359 1.55-4.269 1.666-4.908.53.063 1.049.074 1.207.012zM8.935 21.43c-.09-.297-1.42-4.554 1.293-7.737-.687-.245-1.388-.45-2.09-.618C6.19 14.514 4.416 16.68 3.864 17.55c1.42 1.666 3.493 2.82 5.071 3.88z"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 text-slate-500 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <span class="font-serif text-slate-300">Alex River</span> &copy; <span id="current-year">2024</span>. All rights reserved.
+            </div>
+            <div class="text-sm">
+                Designed with <span class="text-slate-400">♥</span> and a lot of coffee.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
